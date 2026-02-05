@@ -1,4 +1,6 @@
 package code.ca.bcit.comp2522.bookstore;
 
-public interface Printable {
+public interface Printable
+{
+    void display();
 }
