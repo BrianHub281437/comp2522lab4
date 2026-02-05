@@ -1,0 +1,4 @@
+package code.ca.bcit.comp2522.bookstore;
+
+public class Person {
+}
