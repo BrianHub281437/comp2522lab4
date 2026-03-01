@@ -147,7 +147,7 @@ public class Person implements Comparable<Person>, Reversible, Printable
 
     /**
      *
-     * @param text
+     * @param text String
      * @return reverse text
      */
     private String reverse(final String text)

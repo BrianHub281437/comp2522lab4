@@ -33,6 +33,13 @@ public final class Date implements Printable
     private final int day;
     public Date getYear;
 
+    /**
+     * Construct for Date with validation
+     *
+     * @param year
+     * @param month
+     * @param day
+     */
     public Date(final int year,
                 final int month,
                 final int day)
@@ -46,6 +53,10 @@ public final class Date implements Printable
         this.day = day;
     }
 
+    /**
+     *
+     * @param year
+     */
     private static void validateYear(final int year)
     {
         final int currentYear;
