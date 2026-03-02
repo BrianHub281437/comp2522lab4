@@ -105,4 +105,10 @@ public class Name implements Printable
                 + getFullName()
                 + ".");
     }
+
+    @Override
+    public String toString()
+    {
+        return getFullName();
+    }
 }
