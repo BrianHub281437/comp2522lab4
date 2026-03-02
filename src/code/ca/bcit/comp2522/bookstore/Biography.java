@@ -31,12 +31,22 @@ public class Biography extends Book implements Printable
     {
         super(title, yearPublished, author);
 
+        validateSubject(subject);
+
+        this.subject = subject;
+    }
+
+    /**
+     * Validates the subject of the biography.
+     * Cannot be null
+     * @param subject
+     */
+    void validateSubject(final Person subject)
+    {
         if (subject == null)
         {
             throw new IllegalArgumentException("Subject cannot be null");
         }
-
-        this.subject = subject;
     }
 
     /**
@@ -74,8 +84,7 @@ public class Biography extends Book implements Printable
     }
 
     /**
-     * Overrides hashcode
-     *
+     * Overrides hashcode returns the same hashcode if two biographies are equal.
      * @return hashcode
      */
     @Override
